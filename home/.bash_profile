@@ -49,4 +49,4 @@ for file in ~/.completions/*; do
 done;
 unset file;
 
-eval "$(hub alias -s)"
+#eval "$(hub alias -s)"

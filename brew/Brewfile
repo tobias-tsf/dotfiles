@@ -8,7 +8,7 @@ tap 'caskroom/cask'
 tap 'caskroom/versions'
 
 # General development stuff
-#brew 'bash-completion'
+brew 'bash-completion'
 brew 'git'
 brew 'gpg2'
 brew 'gpg-agent'

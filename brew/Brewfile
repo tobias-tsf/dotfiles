@@ -21,11 +21,13 @@ brew 'mongo-orchestration'
 brew 'wget'
 #brew 'cloc'
 #brew 'mas'
+brew 'node'
 
-brew 'docker'
-brew 'docker-machine'
+#brew 'docker' # Installed via Docker for Mac
+#brew 'docker-machine' # Installed via Docker for Mac
 brew 'vagrant-completion'
 brew 'rsync'
+brew 'unison'
 brew 'mysql'
 
 brew 'yarn'
@@ -59,3 +61,7 @@ cask 'mysqlworkbench'
 cask 'robo-3t'
 cask 'karabiner'
 cask 'spectacle'
+cask 'gimp'
+cask 'firefox'
+cask 'mono-mdk' # Needed for fiddler
+cask 'visual-studio-code'

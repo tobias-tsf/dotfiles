@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Install homebrew
+echo "Install homebrew and dependencies"
+./setup-brew.sh
+
+echo "Setup bootstrap settings"
+./setup-dotfiles.sh
+
+echo "Update macOS settings"
+./setup-macos.sh
+
+echo "Install app store programs"
+./setup-apps.sh

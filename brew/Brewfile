@@ -33,16 +33,14 @@ brew 'mysql'
 brew 'yarn'
 brew 'kubernetes-cli'
 brew 'blackfire-agent'
+brew 'zsh'
 
 # PHP packages
 tap 'homebrew/php'
-brew 'php71'
-brew 'php71-intl'
-brew 'php71-mongodb'
-brew 'php71-xdebug'
-brew 'php71-imagick'
-brew 'php71-v8js'
+brew 'php'
+# pecl mongodb, xdebug, imagick, v8js, apcu
 brew 'composer'
+brew 'coreutils' # Needed for realpath
 
 # General casks
 cask 'atom'
@@ -51,7 +49,7 @@ cask 'spotify'
 #cask 'moom'
 #cask 'phpstorm'
 #cask 'sonos'
-#cask 'toggldesktop'
+#cask 'toggldesktop'x
 #cask 'whatpulse'
 #cask 'whatsapp'
 cask 'google-cloud-sdk'
@@ -65,3 +63,5 @@ cask 'gimp'
 cask 'firefox'
 cask 'mono-mdk' # Needed for fiddler
 cask 'visual-studio-code'
+cask 'iterm2'
+cask 'the-unarchiver'

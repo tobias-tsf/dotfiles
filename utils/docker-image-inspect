@@ -1,0 +1,20 @@
+image=$1
+
+echo "Using image $image"
+gcloud docker -- pull $image
+echo "Creating docker container..."
+docker create -it --name tmp-image-inspect $image
+echo "Starting docker container..."
+docker start tmp-image-inspect
+docker pause tmp-image-inspect
+echo "Taking snapshot..."
+docker commit tmp-image-inspect tmp-image-inspect-snapshot
+echo "Running snapshot..."
+docker run -it --name tmp-image-inspect-snapshot tmp-image-inspect-snapshot /bin/bash
+
+echo "Cleaning up..."
+docker stop tmp-image-inspect
+docker rm tmp-image-inspect-snapshot
+docker rmi tmp-image-inspect-snapshot
+docker rm tmp-image-inspect
+echo "Done"

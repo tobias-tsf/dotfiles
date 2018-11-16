@@ -50,3 +50,6 @@ done;
 unset file;
 
 #eval "$(hub alias -s)"
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
